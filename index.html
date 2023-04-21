@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How about a game? | Register for ADRENALINE RUSH</title>
+    <link href="styles.css" rel="stylesheet" type="text/css"/> 
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+    <div class="container" align="center">
+        <video autoplay loop id="backgroundvid" src="background.mp4"></video>        
+    </div>
+    <div class="header" align="center">
+        <h1 id="department">University College of Engineering</h1>
+        <h1 id="department">Department of Computer Science and Engineering presents...</h1>
+        <h1 class="ml10">
+            <span class="text-wrapper">
+              <span class="letters">ADRENALINE RUSH</span>
+            </span>
+          </h1>
+          
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js">
+            var textWrapper = document.querySelector('.ml2');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+            anime.timeline({loop: true})
+            .add({
+                targets: '.ml2 .letter',
+                scale: [4,1],
+                opacity: [0,1],
+                translateZ: 0,
+                easing: "easeOutExpo",
+                duration: 950,
+                delay: (el, i) => 70*i
+            }).add({
+                targets: '.ml2',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+          </script>
+           
+    </div>
+    
+    <div class="deets">
+        <section class="info">
+            <h1 id="prizepool">&nbsp;&nbsp;1.5K Prize POOL!</h1>
+            
+            <ul>
+                <li>Game : Valorant</li>
+                <li>Team of 5</li>
+                <li>2 day event</li>
+                <li>April 25 : 11AM - 1PM </li>
+                <li>April 26 : 9:30AM - 11:30AM</li>
+                <li>Competitive swift play</li>
+                <li>Players should bring their own PC's</li>
+            </ul>
+            <h3 align="center">Contact US</h3>
+            <ol>
+                <li>Nabiel : 9995306502</li>
+                <li>Jins : 7306469318</li>
+                <li>Kiran : 8075775163</li>
+            </ol>
+        </section>
+    <div class="countdown" align="right"></div>
+    <div class="join" align="right">
+        <a href="https://www.google.com"><button class="button">register now!</button></a>
+    </div>
+    <div class="footer"><h1>Created by Nabiel</h1></div>
+	<script>
+		var countDownDate = new Date("April 25, 2023 09:30:00").getTime();
+		var x = setInterval(function() {
+			var now = new Date().getTime();
+			var distance = countDownDate - now;
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			document.querySelector(".countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+			if (distance < 0) {
+				clearInterval(x);
+				document.querySelector(".countdown").innerHTML = "LET'S ROLL!!!";
+			}
+		}, 1000);
+
+        document.querySelector(".button").addEventListener("click");   
+	</script>
+</body>
+</html>

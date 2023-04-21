@@ -1,0 +1,187 @@
+
+@font-face {
+    font-family: 'VALORANT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('VALORANT'), url('VALORANT.woff') format('woff');
+}
+
+#backgroundvid {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+      
+}
+video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position:relative;
+    top: 0;
+    left: 0;
+}
+
+
+.info {
+    background-color: black;
+    opacity: 70%;
+    padding-left: 10px;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    /* padding-right: 10px; */
+    /* margin-top: 15px; */
+    margin-bottom: 15px;
+    margin-left:20px;
+    /* margin-right: 1190px; */
+    border-radius: 12px;
+    width:30%;
+    float: left;
+}
+
+.deets {
+    font-family: "VALORANT";
+    color:white;
+    font-size:large;
+
+}
+.header {
+    background-color: black;
+    opacity: 70%;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left:20px;
+    margin-right: 20px;
+    border-radius: 12px;
+}
+
+#department {
+    font-family: "VALORANT";
+    color:white;
+    font-size: medium;
+    
+}
+.ml10 {
+    font-family: "VALORANT";
+    color:white;
+    opacity: 200%;
+    font-size: xx-large;
+    position: relative;
+    font-weight: 900;
+    font-size: xx-large;
+}
+  
+.ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+#prizepool {
+    font-size: xx-large;
+    text-align: center;  
+
+}
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+.countdown {
+    display:flexbox;
+    background-color: black;
+    opacity: 70%;
+    font-family: "VALORANT";
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 260px;
+    padding-right: 260px; 
+    /* margin-top: 15px; */
+    margin-bottom: 15px;
+    margin-left:30px;
+    /* margin-right: 1190px; */
+    border-radius: 12px;
+    width:30%;
+    float: left;
+}
+.footer {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    width: 100%;
+    font-family: "VALORANT";
+    color: white;
+    /* background-color: black; */
+    opacity: 80%;
+    font-size: 6px;
+    text-align: center;
+    /* padding-left: 20px; */
+}
+.button {
+    display:flexbox;
+    background-color: black;
+    opacity: 70%;
+    font-family: "VALORANT";
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    margin-top: 65px;
+    margin-bottom: 15px;
+    margin-left:360px;
+    margin-right: 200px;
+    border-radius: 12px;
+    width:20%;
+    float: left;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.button:hover {
+    background-color: grey;
+    color: white;
+}
+
+@media (max-width: 1000px) {
+    .header {
+        margin-top: 80px;
+    }
+    .info {
+        width: 89%;
+        float:inline-start;
+        text-align: left;
+        margin-top: 40px;
+    }
+    .countdown {
+        width: 70%;
+        float:inline-start;
+        font-size:xx-large;
+        text-align:center;
+        padding:50px;;
+        margin: 20px;
+        display:inline-flexbox;
+    }
+    
+    .button {
+        width: 90%;
+        float:inline-start;
+        font-size:xx-large;
+        text-align:center;
+        padding:50px;
+        margin: 20px;
+        margin-top: 80px;
+        display:inline-flexbox;
+    }   
+}
